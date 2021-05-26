@@ -55,7 +55,9 @@ basic.forever(function () {
 ```
 
 
-## all the code
+## step 5 Check the code and download
+
+```block
 let right_light_sensor = 0
 let Left_light_sensor = 0
 bitbot.select_model(BBModel.Auto)
@@ -65,3 +67,4 @@ basic.forever(function () {
     bitbot.rotate(BBRobotDirection.Left, right_light_sensor)
     bitbot.rotate(BBRobotDirection.Right, Left_light_sensor)
 })
+```
