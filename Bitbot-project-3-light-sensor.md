@@ -1,13 +1,17 @@
-# Bitbot-project-3-light-sensor
+	# Bitbot-project-3-light-sensor
 
-## Step 1 Setup the Bitbot
+## Step 1 
+Setup the Bitbot
+
 First we will get the "select bitbit modle" block from the "select bitbit modle" tab
 and place it in the "on start" block.
 
 ```blocks
 bitbot.select_model(BBModel.Classic)
 ```
-## Step 2 create the variable's 
+## Step 2 
+create the variable's 
+
 Fires we need to create a variable for ecah sensor.
 Go to the "variable" tab and create a variable called "right_light_sensor" then create another called "Left_light_sensor"
 Then select the "set to" block from the "variable" tab amd plce it in the "forever" block.
@@ -21,9 +25,11 @@ basic.forever(function () {
     right_light_sensor = 0
 })
 ```
-## Step 3 setting the sensors
+## Step 3 
+Setting the sensors
+
 Next we need to tell each variable where to get their value from.
-Go to the 'Bitbot" tab and the "inputs & outputs" tab and select the "left light sensor" and place it in the "0" of the "set to" block from the "variable" tab
+Go to the 'Bitbot" tab and the "inputs & outputs" tab and select the "left light sensor" and place it in the "0" of the "set to" block from the "variable" tab.
 Then do the same for the "right light sensor" "set to" block from the "variable" tab
 
 ```block
@@ -36,7 +42,9 @@ basic.forever(function () {
 
 ```
 
-## Step 4 adding motion
+## Step 4 
+Adding motion
+
 Now we woll add in the motors.
 Go to the "bitbot" "motors" tab and select the "spin at speed" block" and place it at the bottom of the the forever block.
 Do this again and change to the other motor. You should have one "left" and one "right" motor.
@@ -54,8 +62,8 @@ basic.forever(function () {
 })
 ```
 
-
-## step 5 Check the code and download
+## step 5 
+Check the code and download
 
 ```block
 let right_light_sensor = 0
@@ -68,3 +76,5 @@ basic.forever(function () {
     bitbot.rotate(BBRobotDirection.Right, Left_light_sensor)
 })
 ```
+
+
